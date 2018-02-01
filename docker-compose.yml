@@ -11,6 +11,8 @@ services:
        MYSQL_DATABASE: wordpress
        MYSQL_USER: wordpress
        MYSQL_PASSWORD: wordpress
+     volumes:
+       - ./dump.sql:/tmp/dump.sql
 
    wordpress:
      depends_on:
